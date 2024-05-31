@@ -23,7 +23,7 @@ namespace SSD_Components
 		if (block_pool_gc_threshold < 1) {
 			block_pool_gc_threshold = 1;
 		}
-		block_pool_gc_hard_threshold = (unsigned int)(gc_hard_threshold * (double)block_no_per_plane);
+		block_pool_gc_hard_threshold = (unsigned int)(gc_hard_threshold * (double)block_no_per_plane);//停止qiang'zk
 		if (block_pool_gc_hard_threshold < 1) {
 			block_pool_gc_hard_threshold = 1;
 		}

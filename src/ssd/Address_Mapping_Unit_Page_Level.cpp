@@ -14,8 +14,8 @@ namespace SSD_Components
 
 	Cached_Mapping_Table::~Cached_Mapping_Table()
 	{
-		std::unordered_map<LPA_type, CMTSlotType*> addressMap;
-		std::list<std::pair<LPA_type, CMTSlotType*>> lruList;
+		/*std::unordered_map<LPA_type, CMTSlotType*> addressMap;
+		std::list<std::pair<LPA_type, CMTSlotType*>> lruList;*/
 
 		auto entry = addressMap.begin();
 		while (entry != addressMap.end()) {

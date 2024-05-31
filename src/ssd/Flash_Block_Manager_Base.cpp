@@ -158,7 +158,8 @@ namespace SSD_Components
 			}
 		}
 
-		return max_erased_block - min_erased_block;
+		//return max_erased_block - min_erased_block;
+        return plane_record->Blocks[max_erased_block].Erase_count-plane_record->Blocks[min_erased_block];
 	}
     //获取最冷的块编号，也就是擦除次数最小的编号
 	flash_block_ID_type Flash_Block_Manager_Base::Get_coldest_block_id(const NVM::FlashMemory::Physical_Page_Address& plane_address)
